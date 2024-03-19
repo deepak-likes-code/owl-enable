@@ -9,18 +9,18 @@
 # Configure this with your name and a create a secure token (which must also be entered into the
 # e.g. iOS client app)
 user:
-  name: "Deepak"
+  name: Deepak
   client_token: Deepak321
 
 # Choose an LLM. To use OpenAI models, 'api_key' must be valid and 'api_base_url' must remain blank.
 llm:
   # Local mistral
-  model: ollama/mistral:instruct
-  api_base_url: http://localhost:11434
-  api_key:
+  # model: ollama/mistral:instruct
+  # api_base_url: http://localhost:11434
+  # api_key:
 
   # OpenAI
-  
+
   model: gpt-3.5-turbo-0125
   api_base_url:
   api_key: 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
@@ -42,26 +42,26 @@ deepgram:
   language: "en-US"
 
 # Whisper model configuration if using Whisper for transcription.
-async_whisper:
-  host: "127.0.0.1"
-  port: 8010
-  hf_token: your_hugging_face_token
-  device: cpu
-  compute_type: int8
-  batch_size: 16
-  model: tiny
-  verification_threshold: 0.1
-  verification_model_source: speechbrain/spkrec-ecapa-voxceleb
-  verification_model_savedir: pretrained_models/spkrec-ecapa-voxceleb
+# async_whisper:
+#   host: "127.0.0.1"
+#   port: 8010
+#   hf_token: your_hugging_face_token
+#   device: cpu
+#   compute_type: int8
+#   batch_size: 16
+#   model: tiny
+#   verification_threshold: 0.1
+#   verification_model_source: speechbrain/spkrec-ecapa-voxceleb
+#   verification_model_savedir: pretrained_models/spkrec-ecapa-voxceleb
 
-streaming_whisper:
-  host: "127.0.0.1"
-  port: 8009
-  model: "small"
-  language: "en"
-  silero_sensitivity: 0.4
-  webrtc_sensitivity: 2
-  post_speech_silence_duration: 0.5
+# streaming_whisper:
+#   host: "127.0.0.1"
+#   port: 8009
+#   model: "small"
+#   language: "en"
+#   silero_sensitivity: 0.4
+#   webrtc_sensitivity: 2
+#   post_speech_silence_duration: 0.5
 
 captures:
   capture_dir: captures
@@ -86,4 +86,4 @@ udp:
   port: 8001
 # To enable web search
 bing:
-  subscription_key: your_bing_subscription_service_key
+  subscription_key: 0504c11f3ac249cdaf1ee2a0729e5f6b
