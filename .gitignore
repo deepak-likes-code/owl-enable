@@ -1,6 +1,6 @@
 # Local configuration files
 /*.yaml
-
+owl/config.yaml
 # Local database
 *.sqlite3
 

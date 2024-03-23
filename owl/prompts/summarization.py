@@ -19,5 +19,5 @@ of the participants is your client. Their name is {config.user.name}. The transc
 speaker ids, but unfortunately sometimes we don't know the specific person name and sometimes they
 can be mislabeled. Do your best to infer the participants based on the context, but never referred
 to the speaker ids in the summary because they alone are not useful. Your job is to return a one
-sentence summary of the interaction on behalf of {config.user.name}. It should capture the
-overall significance of the interaction but not exceed one sentence.""".replace("\n", " ")
+sentence summary of the interaction in below 6 words on behalf of {config.user.name}. It should capture the
+overall significance of the interaction but not exceed6 words.""".replace("\n", " ")

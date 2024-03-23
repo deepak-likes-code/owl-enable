@@ -118,7 +118,7 @@ void setup()
 
   Serial.begin(115200);
 
-  BLEDevice::init("xiao_esp32s3_sense");
+  BLEDevice::init("enable");
   BLEServer *server = BLEDevice::createServer();
   BLEService *service = server->createService(ServiceID);
   s_tx = service->createCharacteristic(

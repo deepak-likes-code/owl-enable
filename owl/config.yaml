@@ -42,26 +42,26 @@ deepgram:
   language: "en-US"
 
 # Whisper model configuration if using Whisper for transcription.
-# async_whisper:
-#   host: "127.0.0.1"
-#   port: 8010
-#   hf_token: your_hugging_face_token
-#   device: cpu
-#   compute_type: int8
-#   batch_size: 16
-#   model: tiny
-#   verification_threshold: 0.1
-#   verification_model_source: speechbrain/spkrec-ecapa-voxceleb
-#   verification_model_savedir: pretrained_models/spkrec-ecapa-voxceleb
+async_whisper:
+  host: "127.0.0.1"
+  port: 8010
+  hf_token: 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
+  device: cpu
+  compute_type: int8
+  batch_size: 16
+  model: tiny
+  verification_threshold: 0.1
+  verification_model_source: speechbrain/spkrec-ecapa-voxceleb
+  verification_model_savedir: pretrained_models/spkrec-ecapa-voxceleb
 
-# streaming_whisper:
-#   host: "127.0.0.1"
-#   port: 8009
-#   model: "small"
-#   language: "en"
-#   silero_sensitivity: 0.4
-#   webrtc_sensitivity: 2
-#   post_speech_silence_duration: 0.5
+streaming_whisper:
+  host: "127.0.0.1"
+  port: 8009
+  model: "small"
+  language: "en"
+  silero_sensitivity: 0.4
+  webrtc_sensitivity: 2
+  post_speech_silence_duration: 0.5
 
 captures:
   capture_dir: captures
@@ -73,7 +73,7 @@ database:
   url: "sqlite:///./db.sqlite3"
 
 conversation_endpointing:
-  timeout_seconds: 300
+  timeout_seconds: 100
   min_utterances: 2
 
 notification:
